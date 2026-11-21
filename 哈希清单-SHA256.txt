@@ -1,0 +1,58 @@
+# ─────────────────────────────────────────────────────────────────────────
+# 哈希清单 / SHA-256 Manifest
+# 黎曼猜想 Lean 4 形式化工程 · 独立核查仓库
+# Independent Audit of the Alpöge & Claude Riemann Hypothesis Lean 4 Formalization
+# 生成时间 / Generated: 2026-11-22 (Asia/Shanghai)
+# ─────────────────────────────────────────────────────────────────────────
+#
+# 用法 / Usage
+#   Linux / macOS / Git Bash :  sha256sum -c 哈希清单-SHA256.txt
+#   Windows PowerShell       :  Get-FileHash -Algorithm SHA256 <file>   # 逐行比对
+#   只校验本仓库文件（不下载大文件）:
+#       grep -v 'external/' 哈希清单-SHA256.txt | grep -v '^#' > repo.sha256
+#       sha256sum -c repo.sha256
+#
+# 说明：Part A 以 external/ 开头的三行需要先按 README §3 下载官方文件；未下载时这三行报
+#       FAILED 属预期，不影响 Part B 的校验。本文件自身不列入（自引用无意义）。
+#
+# ─────────────────────────────────────────────────────────────────────────
+# Part A · 官方产物（不随本仓库分发）/ Official artifacts, not shipped here
+# ─────────────────────────────────────────────────────────────────────────
+# external/lean.tar.gz | 239,275,554 B | alpo.ge 14 段 .aa–.an 拼接后与 GitHub release 归档逐字节一致
+9631b4f020199e580ba86178cb56c6e9b09f690c2369a80dc4334aa93f49c7fc  external/lean.tar.gz
+# external/challenge.ndjson.zst | 46,881,299 B | https://math.mit.edu/~drew/grh/challenge.ndjson.zst
+c24ef99dab3556a52c7fb886e03cf22a242f3b96f82ae4cc40539e5d2f678ac6  external/challenge.ndjson.zst
+# external/challenge.ndjson | 350,862,311 B | challenge.ndjson.zst 解压后，51,692 条声明
+bd484ac9886a96f26b1d9a7a59ebd45b7a70d102c015d4f31f9302bbdd6ab2b9  external/challenge.ndjson
+#
+# ─────────────────────────────────────────────────────────────────────────
+# Part B · 本仓库发布文件 / Files shipped in this repository
+# ─────────────────────────────────────────────────────────────────────────
+# 00-总报告-我们做了什么.md | 31845 B
+736b140a5d85235e5d8ffc014db18db623c5f13b95b12db27ac69bb053a86e24  00-总报告-我们做了什么.md
+# README.md | 36315 B
+d9e625083fa204be5fbef2b2d064d9918a7ba9a9f78b95da8d39b47f21e1067b  README.md
+# 01-验证报告-黎曼猜想.md | 27866 B
+0cb4784dc55882ae6b57c14fcacdd07647b3ea775e113b22422f37c227f646c3  01-验证报告-黎曼猜想.md
+# 02-中文导读与代码地图.md | 78933 B
+43809c62269dafaad95dd5bc9c548cabb23bfe1aafaed56fc7a622c642cf13cb  02-中文导读与代码地图.md
+# 03-核心13跳-人类可读数学证明.md | 35655 B
+a0c33d4862eb074fff049a1df9bf922f46647d135c12023f5271229e143354bf  03-核心13跳-人类可读数学证明.md
+# 04-AI千万行代码工程架构分析.md | 32766 B
+55ffff17e7c3d14dc28778d6cd7866431687698490cf74fc97211c981ba66e5e  04-AI千万行代码工程架构分析.md
+# challenge_check.py | 6842 B
+021459bc8620f4758ca388a97bcd5e9e41b24ec96234f519326136430650aa0f  challenge_check.py
+# decode_challenge.py | 9996 B
+c097476f961250c65febe2b9a922039a618a67053ab92ea9fbb7e7949989fe38  decode_challenge.py
+# eng_stats.py | 40779 B
+3f0035a1fdc628a95008f9a5d66721ff5796eb48fa30869b22ffa67081cad27e  eng_stats.py
+# sorry_check.py | 5802 B
+5eb04ac1fdf56050846b924a1436888a236f764e59b35ba6117966fba2f0d730  sorry_check.py
+# LICENSE | 1077 B | MIT，覆盖 Python 脚本与配置文件
+bdb402f278c5a859f773e136b6ef3c4a8156c11ca65fdb6d7c257ca1e48aa104  LICENSE
+# LICENSE-docs | 1048 B | CC BY 4.0，覆盖 00–04 中文文档正文
+55ed343bc4545b351cf805a785521e64dc803f7a9b50d7a6eb62cec739e44ef9  LICENSE-docs
+# .gitignore | 285 B
+224077bc237fd861d562f60f7ae1ebb9f35d8d09bad553686bdf1cb63862675c  .gitignore
+# .gitattributes | 171 B
+ecc1d96b00120f59455e0b4fde1701975299b6ee7fb4f88c3cfed502b03ee084  .gitattributes

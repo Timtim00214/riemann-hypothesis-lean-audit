@@ -1,0 +1,24 @@
+# 官方大文件：不入库，自行下载后放到 external/（见 README §3）
+external/
+*.ndjson
+*.ndjson.zst
+*.tar.gz
+*.tgz
+*.zip
+
+# 脚本产物
+analysis/
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 编辑器与系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

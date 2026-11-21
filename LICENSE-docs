@@ -1,0 +1,22 @@
+本仓库的**中文文档**（`README.md` 的中文部分、`01`–`04` 四份 Markdown）采用
+[Creative Commons 署名 4.0 国际许可协议（CC BY 4.0）](https://creativecommons.org/licenses/by/4.0/deed.zh-hans) 授权。
+
+你可以自由复制、转载、改编、商用，唯一要求是署名并给出本仓库链接。
+
+The Chinese documents in this repository are licensed under the
+[Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+
+The Python scripts, `LICENSE`, and other code files are licensed under the MIT
+License; see [LICENSE](LICENSE).
+
+---
+
+## 不在授权范围内 / Not covered
+
+本仓库不包含、也不再分发下列官方产物，它们归原作者与 MIT 团队所有：
+
+- `lean.tar.gz`（Levent Alpöge 发布的源码归档）
+- `challenge.ndjson.zst`、`solution.ndjson.zst`（MIT 团队发布的对照数据）
+- `riemann-hypothesis-lean-main.zip`（GitHub 源码包）
+
+本仓库只记录这些文件的哈希值，用于校验你自己下载的副本。
